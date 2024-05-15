@@ -15,6 +15,7 @@ function Dice() {
   const rollDice = () => {
     setCurrentDice(blank);
     setTimeout(() => {
+      const randomDiceIndex = Math.floor(Math.random() * allDice.length);
       setCurrentDice(allDice[randomDiceIndex]);
     }, 1000);
   };
